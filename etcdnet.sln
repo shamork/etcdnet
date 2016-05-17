@@ -1,11 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EtcdNet", "EtcdNet\EtcdNet.csproj", "{C5F487C7-1B4A-462B-9E59-E37F9E85F9DE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EtcdNet.Sample", "EtcdNet.Sample\EtcdNet.Sample.csproj", "{A438E39C-A5A5-4B23-9EFE-7948A6992AD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Net40", "Net40", "{C151B1EB-5C31-4828-90A1-B547EA586446}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Net45", "Net45", "{1F7DC2AC-AD71-44F1-B259-EB392B11DBBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EtcdNet.40", "EtcdNet.40\EtcdNet.40.csproj", "{B5E7EF6B-2018-48A8-AFDD-6C158F745189}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EtcdNet.40.Sample", "EtcdNet.40.Sample\EtcdNet.40.Sample.csproj", "{231F69C9-0ED9-488F-8F75-BB30795C68D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +29,22 @@ Global
 		{A438E39C-A5A5-4B23-9EFE-7948A6992AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A438E39C-A5A5-4B23-9EFE-7948A6992AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A438E39C-A5A5-4B23-9EFE-7948A6992AD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5E7EF6B-2018-48A8-AFDD-6C158F745189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5E7EF6B-2018-48A8-AFDD-6C158F745189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5E7EF6B-2018-48A8-AFDD-6C158F745189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5E7EF6B-2018-48A8-AFDD-6C158F745189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{231F69C9-0ED9-488F-8F75-BB30795C68D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{231F69C9-0ED9-488F-8F75-BB30795C68D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{231F69C9-0ED9-488F-8F75-BB30795C68D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{231F69C9-0ED9-488F-8F75-BB30795C68D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C5F487C7-1B4A-462B-9E59-E37F9E85F9DE} = {1F7DC2AC-AD71-44F1-B259-EB392B11DBBC}
+		{A438E39C-A5A5-4B23-9EFE-7948A6992AD6} = {1F7DC2AC-AD71-44F1-B259-EB392B11DBBC}
+		{B5E7EF6B-2018-48A8-AFDD-6C158F745189} = {C151B1EB-5C31-4828-90A1-B547EA586446}
+		{231F69C9-0ED9-488F-8F75-BB30795C68D2} = {C151B1EB-5C31-4828-90A1-B547EA586446}
 	EndGlobalSection
 EndGlobal

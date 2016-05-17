@@ -83,8 +83,11 @@ namespace EtcdNet.Sample
             for (int i = 0; i < 5; i++) {
                 tasks.Add( etcdClient.CreateInOrderNodeAsync(key, i.ToString(), ttl: 3) );
             }
-
+#if Net40
+            await TaskEx.WhenAll(tasks);
+#else
             await Task.WhenAll(tasks);
+#endif
 
             // list the in-order nodes
             resp = await etcdClient.GetNodeAsync(key, false, recursive: true, sorted:true);
@@ -203,7 +206,11 @@ namespace EtcdNet.Sample
                     }
                 }
                 // if something went wrong, wait for 1 second and try again
+#if Net40
+                await TaskEx.Delay(1000);
+#else
                 await Task.Delay(1000);
+#endif
             }
         }
     }

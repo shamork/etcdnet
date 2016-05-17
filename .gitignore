@@ -4,3 +4,7 @@ EtcdNet/bin
 EtcdNet.Sample/obj
 EtcdNet.Sample/bin
 *.user
+/EtcdNet.40.Sample/obj
+/EtcdNet.40.Sample/bin
+/EtcdNet.40/obj
+/EtcdNet.40/bin
